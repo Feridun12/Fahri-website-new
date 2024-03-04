@@ -1,8 +1,12 @@
+import Navbar from "./Navbar";
 import "../styles/App.scss";
 
 function App() {
   return (
     <div className="App">
+      <section>
+        <Navbar />
+      </section>
       <section>Home</section>
       <section>Hakkımızda</section>
       <section>Sizden gelenler</section>

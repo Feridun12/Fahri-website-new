@@ -2,15 +2,10 @@
   height: 60px;
   background-color: #00aaff;
   color: white;
-
-  .navbar {
-    // max-width: 1366px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-  }
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-details-wrapper {

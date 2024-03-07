@@ -6,14 +6,14 @@ import ToggleButton from "./toggleButton/ToggleButton";
 
 const variants = {
   open: {
-    clipPath: "circle(1200px at 50px 50px)",
+    clipPath: "circle(1200px at calc(100% - 50px) 50px)",
     transition: {
       type: "spring",
       stiffness: 20,
     },
   },
   closed: {
-    clipPath: "circle(30px at 50px 50px)",
+    clipPath: "circle(30px at calc(100% - 50px) 50px)",
     transition: {
       delay: 0.5,
       type: "spring",
@@ -27,9 +27,11 @@ const Sidebar = () => {
 
   return (
     <motion.div className="sidebar" animate={open ? "open" : "closed"}>
-      <motion.div className="bg" variants={variants}>
-        <Links />
-      </motion.div>
+      {open && (
+        <motion.div className="bg" variants={variants}>
+          <Links />
+        </motion.div>
+      )}
       <ToggleButton setOpen={setOpen} />
     </motion.div>
   );

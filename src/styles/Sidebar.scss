@@ -55,8 +55,8 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 400px;
-    background: white;
+    width: 200px;
+    background: rgb(255, 255, 255);
 
     @include mobile {
       width: 200px;

@@ -1,17 +1,12 @@
-import React from "react";
-import "../styles/Navbar.scss";
 import Sidebar from "./sidebar/Sidebar";
+import "../styles/Navbar.scss";
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <div className="navbar-wrapper">
-      <div className="navbar-details-wrapper">
-        <span className="navbar-details">Isim</span>
-        <span className="navbar-details">Tel no</span>
-      </div>
+    <div className="navbar">
       <Sidebar />
     </div>
   );
-}
+};
 
 export default Navbar;

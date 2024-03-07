@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import "../../../styles/Sidebar.scss";
 
 const variants = {
   open: {
@@ -31,6 +32,7 @@ const Links = () => {
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
         <motion.a
+          className="navigation-link"
           href={`#${item}`}
           key={item}
           variants={itemVariants}

@@ -28,7 +28,7 @@ const Sidebar = () => {
   return (
     <motion.div className="sidebar" animate={open ? "open" : "closed"}>
       {open && (
-        <motion.div className="bg" variants={variants}>
+        <motion.div className="menu-background" variants={variants}>
           <Links />
         </motion.div>
       )}

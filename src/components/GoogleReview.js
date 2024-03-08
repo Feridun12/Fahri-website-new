@@ -1,7 +1,7 @@
 import React from "react";
 
 function GoogleReview() {
-  return <div>GoogleReview</div>;
+  return <div id="Sizden Gelenler">GoogleReview</div>;
 }
 
 export default GoogleReview;

@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Sidebar from "./sidebar/Sidebar";
 import Intro from "./Intro";
 import AboutMe from "./AboutMe";
 import GoogleReview from "./GoogleReview";
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Sidebar />
       <div className="sections">
         <Intro />
         <AboutMe />

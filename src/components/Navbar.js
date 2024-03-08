@@ -1,4 +1,3 @@
-import Sidebar from "./sidebar/Sidebar";
 import "../styles/Navbar.scss";
 
 const Navbar = () => {
@@ -8,7 +7,6 @@ const Navbar = () => {
         <p className="navbar-detail">Fahri Erbulak</p>
         <p className="navbar-detail">+90 533 851 9561</p>
       </div>
-      <Sidebar />
     </div>
   );
 };

@@ -7,7 +7,7 @@ const ToggleButton = ({ setOpen }) => {
       className="menu-toggle-button"
       onClick={() => setOpen((prev) => !prev)}
     >
-      <svg width="23" height="23" viewBox="0 0 23 23">
+      <svg className="toggle-button-svg" viewBox="-8 -7.5 38 35">
         <motion.path
           strokeWidth="3"
           stroke="black"

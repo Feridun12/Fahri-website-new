@@ -3,7 +3,7 @@ import "../styles/Navbar.scss";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
+    <div className="navbar-wrapper">
       <Sidebar />
     </div>
   );

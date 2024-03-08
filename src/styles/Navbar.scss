@@ -26,7 +26,10 @@
   align-items: center;
 }
 
-.navbar-menu-icon {
-  filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(307deg)
-    brightness(104%) contrast(104%);
+@media screen and (min-width: 500px) {
+  .navbar-details-wrapper {
+    flex-direction: row;
+    width: 250px;
+    justify-content: space-between;
+  }
 }

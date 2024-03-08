@@ -8,6 +8,7 @@ html {
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -15,11 +16,23 @@ a {
   color: inherit;
 }
 
-section {
+.App {
   height: 100vh;
-  width: 100vw;
-  scroll-snap-align: center;
-  overflow: hidden;
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+    top: 60px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 60px);
+      scroll-snap-align: end;
+    }
+  }
 }
 
 @mixin mobile {
@@ -35,5 +48,18 @@ section {
 @mixin desktop {
   @media (max-width: 1366px) {
     @content;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+  .App {
+    .sections {
+      height: calc(100vh - 80px);
+      top: 80px;
+
+      > * {
+        height: calc(100vh - 80px);
+      }
+    }
   }
 }

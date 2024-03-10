@@ -1,0 +1,66 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  height: 100vh;
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 60px);
+    position: relative;
+    top: 60px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    z-index: 1;
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 60px);
+      scroll-snap-align: end;
+    }
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+  .App {
+    .sections {
+      height: calc(100vh - 80px);
+      top: 80px;
+
+      > * {
+        height: calc(100vh - 80px);
+      }
+    }
+  }
+}

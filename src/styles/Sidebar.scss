@@ -1,0 +1,64 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+
+  .menu-background {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #00aaff;
+
+    .links {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      color: white;
+
+      .navigation-link {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .menu-toggle-button {
+    z-index: 999;
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border-radius: 50%;
+  }
+}
+
+.toggle-button-svg {
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    .menu-background {
+      width: 300px;
+    }
+  }
+}

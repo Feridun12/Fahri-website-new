@@ -12,13 +12,12 @@ function Intro() {
     <SectionWrapper id="Anasayfa">
       <PageSection>
         <IntroImageWrapper>
-          <Diamond>
-            <IntroImage
-              src={profilePic}
-              alt="to be determined after the pic submission of the client"
-            />
-          </Diamond>
+          <Diamond></Diamond>
         </IntroImageWrapper>
+        <IntroImage
+          src={profilePic}
+          alt="to be determined after the pic submission of the client"
+        />
       </PageSection>
       <PageSection></PageSection>
     </SectionWrapper>

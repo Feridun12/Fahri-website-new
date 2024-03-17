@@ -5,12 +5,13 @@ import {
   IntroImageWrapper,
   IntroImage,
   Diamond,
+  IntroLeftSection,
 } from "../ui/introStyledComponents";
 
 function Intro() {
   return (
     <SectionWrapper id="Anasayfa">
-      <PageSection>
+      <IntroLeftSection>
         <IntroImageWrapper>
           <Diamond></Diamond>
         </IntroImageWrapper>
@@ -18,7 +19,7 @@ function Intro() {
           src={profilePic}
           alt="to be determined after the pic submission of the client"
         />
-      </PageSection>
+      </IntroLeftSection>
       <PageSection></PageSection>
     </SectionWrapper>
   );

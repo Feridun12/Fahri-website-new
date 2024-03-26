@@ -29,4 +29,14 @@ export const Button = styled.button`
   color: white;
   background-color: #00aaff;
   font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 170, 255, 0.8);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 170, 255, 0.8);
+    box-shadow: 0px 0px 10px 0px rgba(0, 170, 255, 0.8);
+    background-color: white;
+    color: #00aaff;
+  }
 `;

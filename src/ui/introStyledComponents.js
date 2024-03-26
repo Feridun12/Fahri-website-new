@@ -89,3 +89,11 @@ export const IntroQuote = styled.h1`
   padding-right: 10px;
   text-align: center;
 `;
+
+export const IntroLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 70px;
+`;

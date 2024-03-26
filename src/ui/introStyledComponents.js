@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+export const IntroSectionWrapper = styled.section`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
 export const IntroLeftSection = styled.section`
   width: 100%;
   height: 100%;
@@ -39,4 +52,40 @@ export const IntroImage = styled.img`
   height: 200px;
   height: auto;
   z-index: 1;
+`;
+
+export const IntroRightSection = styled.section`
+  width: 100%;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const IntroTitleWrapper = styled.div`
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const IntroTitle = styled.h3`
+  color: #00aaff;
+  font-size: 30px;
+  font-weight: 500;
+`;
+
+export const IntroSubTitle = styled.h3`
+  font-weight: 400;
+`;
+
+export const IntroQuote = styled.h1`
+  font-weight: 500;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 `;

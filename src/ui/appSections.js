@@ -20,3 +20,13 @@ export const PageSection = styled.section`
   align-items: center;
   justify-content: center;
 `;
+
+export const Button = styled.button`
+  width: 170px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  background-color: #00aaff;
+  font-size: 16px;
+`;

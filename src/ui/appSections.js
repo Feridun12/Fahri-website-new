@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mainBlueColor } from "../constants/constants";
 
 export const SectionWrapper = styled.section`
   width: 100%;
@@ -27,7 +28,7 @@ export const Button = styled.button`
   border-radius: 15px;
   border: none;
   color: white;
-  background-color: #00aaff;
+  background-color: ${mainBlueColor};
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s;
@@ -37,6 +38,6 @@ export const Button = styled.button`
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 170, 255, 0.8);
     box-shadow: 0px 0px 10px 0px rgba(0, 170, 255, 0.8);
     background-color: white;
-    color: #00aaff;
+    color: ${mainBlueColor};
   }
 `;

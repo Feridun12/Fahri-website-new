@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import { mainBlueColor } from "../constants/constants";
 
 export const IntroSectionWrapper = styled.section`
   width: 100%;
   height: 100%;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
 
@@ -36,7 +36,7 @@ export const IntroImageWrapper = styled.div`
 `;
 
 export const Diamond = styled.div`
-  width: 100%;
+  width: 300px;
   height: 550px;
   background-color: #ff3a5f;
   border-radius: 350px 0px 350px 5px;
@@ -61,25 +61,37 @@ export const IntroRightSection = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 767px) {
+    height: 100%;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+  }
 `;
 
 export const IntroTitleWrapper = styled.div`
   width: 100%;
-  height: 70px;
+  height: 85px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: 767px) {
+    align-items: start;
+  }
 `;
 
 export const IntroTitle = styled.h3`
-  color: #00aaff;
-  font-size: 30px;
+  color: ${mainBlueColor};
+  font-size: 35px;
   font-weight: 500;
 `;
 
 export const IntroSubTitle = styled.h3`
   font-weight: 400;
+  font-size: 25px;
 `;
 
 export const IntroQuote = styled.h1`

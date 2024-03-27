@@ -21,7 +21,7 @@ export const IntroLeftSection = styled.section`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `;
@@ -62,7 +62,7 @@ export const IntroRightSection = styled.section`
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     height: 100%;
     align-items: start;
     justify-content: center;
@@ -78,7 +78,7 @@ export const IntroTitleWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     align-items: start;
   }
 `;
@@ -97,8 +97,8 @@ export const IntroSubTitle = styled.h3`
 export const IntroQuote = styled.h1`
   font-weight: 500;
   font-size: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
 `;
 
@@ -106,8 +106,6 @@ export const IntroLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 230px;
-  height: 100px; */
   width: max-content;
   height: max-content;
   padding: 20px;

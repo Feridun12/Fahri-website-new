@@ -23,13 +23,13 @@ export const PageSection = styled.section`
 `;
 
 export const Button = styled.button`
-  width: 170px;
-  height: 50px;
+  width: 200px;
+  height: 60px;
   border-radius: 15px;
   border: none;
   color: white;
   background-color: ${mainBlueColor};
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   transition: all 0.3s;
 

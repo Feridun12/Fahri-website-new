@@ -26,6 +26,23 @@ export const IntroLeftSection = styled.section`
   }
 `;
 
+export const IntroRightSection = styled.section`
+  width: 100%;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    height: 100%;
+    align-items: start;
+    justify-content: center;
+    gap: 100px;
+    padding-left: 10px;
+  }
+`;
+
 export const IntroImageWrapper = styled.div`
   width: 100%;
   height: 100%;
@@ -36,7 +53,7 @@ export const IntroImageWrapper = styled.div`
 `;
 
 export const Diamond = styled.div`
-  width: 300px;
+  width: 400px;
   height: 550px;
   background-color: #ff3a5f;
   border-radius: 350px 0px 350px 5px;
@@ -54,25 +71,9 @@ export const IntroImage = styled.img`
   z-index: 1;
 `;
 
-export const IntroRightSection = styled.section`
-  width: 100%;
-  height: 475px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  @media screen and (min-width: 768px) {
-    height: 100%;
-    align-items: start;
-    justify-content: center;
-    gap: 20px;
-  }
-`;
-
 export const IntroTitleWrapper = styled.div`
   width: 100%;
-  height: 85px;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,11 +88,36 @@ export const IntroTitle = styled.h3`
   color: ${mainBlueColor};
   font-size: 35px;
   font-weight: 500;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 1444px) and (max-width: 2000px) {
+    font-size: 57px;
+  }
+
+  @media screen and (min-width: 2000px) and (max-width: 2560px) {
+    font-size: 60px;
+  }
 `;
 
 export const IntroSubTitle = styled.h3`
-  font-weight: 400;
+  font-weight: 500;
   font-size: 25px;
+  margin-top: 10px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 1444px) and (max-width: 2000px) {
+    font-size: 30px;
+  }
+
+  @media screen and (min-width: 2000px) and (max-width: 2560px) {
+    font-size: 33px;
+  }
 `;
 
 export const IntroQuote = styled.h1`
@@ -100,13 +126,25 @@ export const IntroQuote = styled.h1`
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    padding: 0;
+    width: 80%;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 2000px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 2000px) and (max-width: 2560px) {
+    font-size: 60px;
+  }
 `;
 
 export const IntroLink = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: max-content;
-  height: max-content;
-  padding: 20px;
+  overflow: visible;
 `;

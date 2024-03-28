@@ -53,13 +53,18 @@ export const IntroImageWrapper = styled.div`
 `;
 
 export const Diamond = styled.div`
-  width: 400px;
+  width: 450px;
   height: 550px;
   background-color: #ff3a5f;
   border-radius: 350px 0px 350px 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 1444px) and (max-width: 2560px) {
+    width: 500px;
+    height: 550px;
+  }
 `;
 
 // the dimensions of the picture is probabloy going to change once we have the actual pictures

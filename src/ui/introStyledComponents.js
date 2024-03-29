@@ -61,7 +61,7 @@ export const Diamond = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 1444px) and (max-width: 2560px) {
+  @media screen and (min-width: 1440px) and (max-width: 2560px) {
     width: 500px;
     height: 550px;
   }
@@ -98,7 +98,7 @@ export const IntroTitle = styled.h3`
     font-size: 50px;
   }
 
-  @media screen and (min-width: 1444px) and (max-width: 2000px) {
+  @media screen and (min-width: 1440px) and (max-width: 2000px) {
     font-size: 57px;
   }
 
@@ -116,7 +116,7 @@ export const IntroSubTitle = styled.h3`
     font-size: 28px;
   }
 
-  @media screen and (min-width: 1444px) and (max-width: 2000px) {
+  @media screen and (min-width: 1440px) and (max-width: 2000px) {
     font-size: 30px;
   }
 

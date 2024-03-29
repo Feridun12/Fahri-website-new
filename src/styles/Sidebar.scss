@@ -62,3 +62,11 @@
     }
   }
 }
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+  .sidebar {
+    .menu-toggle-button {
+      top: 19px;
+    }
+  }
+}

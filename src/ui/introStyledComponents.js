@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { mainBlueColor } from "../constants/constants";
 
-export const IntroSectionWrapper = styled.section`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+// export const IntroSectionWrapper = styled.section`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
-`;
+//   @media screen and (min-width: 768px) {
+//     flex-direction: row;
+//   }
+// `;
 
 export const IntroLeftSection = styled.section`
   width: 100%;
@@ -34,13 +34,13 @@ export const IntroRightSection = styled.section`
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     height: 100%;
     align-items: start;
     justify-content: center;
     gap: 100px;
     padding-left: 10px;
-  }
+  } */
 `;
 
 export const IntroImageWrapper = styled.div`
@@ -152,4 +152,24 @@ export const IntroLink = styled.a`
   align-items: center;
   justify-content: center;
   overflow: visible;
+`;
+
+export const IntroSectionWrapper = styled.section`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+
+    ${IntroRightSection} {
+      height: 100%;
+      align-items: start;
+      justify-content: center;
+      gap: 100px;
+      padding-left: 10px;
+    }
+  }
 `;

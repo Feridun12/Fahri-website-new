@@ -6,10 +6,37 @@ export const SectionWrapper = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
+// bulmak lazim nasil basga bir styled componenti gullanabilin
+export const SectionContentWrapper = styled(SectionWrapper)`
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
+`;
+
+export const SectionTitleWrapper = styled.h1`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+`;
+
+export const SectionTitle = styled.h1`
+  height: 60px;
+  width: 240px;
+  font-size: 35px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: ${mainBlueColor};
+  border-bottom: 3px solid #cccccc;
 `;
 
 // could be used for right and left section

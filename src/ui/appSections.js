@@ -10,8 +10,20 @@ export const SectionWrapper = styled.section`
   justify-content: center;
 `;
 
-// bulmak lazim nasil basga bir styled componenti gullanabilin
-export const SectionContentWrapper = styled(SectionWrapper)`
+export const SectionContentWrapper = styled.div`
+  overflow: auto;
+  width: 100%;
+`;
+
+export const SectionContent = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
@@ -27,9 +39,9 @@ export const SectionTitleWrapper = styled.h1`
 `;
 
 export const SectionTitle = styled.h1`
-  height: 60px;
+  height: 55px;
   width: 240px;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -37,6 +49,32 @@ export const SectionTitle = styled.h1`
   justify-content: center;
   color: ${mainBlueColor};
   border-bottom: 3px solid #cccccc;
+`;
+
+export const SectionSubTitle = styled.h3`
+  color: ${mainBlueColor};
+  font-size: 19px;
+  font-weight: 600;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+`;
+
+export const SectionParagraph = styled.p`
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 120px;
+  font-size: 15px;
+  height: max-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
 `;
 
 // could be used for right and left section

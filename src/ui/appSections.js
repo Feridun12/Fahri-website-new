@@ -29,7 +29,7 @@ export const SectionContent = styled.div`
   }
 `;
 
-export const SectionTitleWrapper = styled.h1`
+export const SectionTitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@ export const SectionSubTitle = styled.h3`
 `;
 
 export const SectionParagraph = styled.p`
-  font-size: 15px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   text-align: center;

@@ -1,4 +1,6 @@
 import React from "react";
+// I have created this json file to follow dry principle
+import ceritificateData from "../static-text/about-me.json";
 // we do not currently have the pictures ready so once we have the picture I will update it.
 import aboutMeImg1 from "../images/intro/rotterdam-profil.jpeg";
 import {
@@ -15,6 +17,7 @@ import {
   AboutMeImg,
   AboutMeList,
   AboutMeListPoint,
+  AboutMeParagraph,
 } from "../ui/aboutMeStyledComponents";
 
 function AboutMe() {
@@ -54,14 +57,16 @@ function AboutMe() {
           <PageSection>
             <SectionSubTitle>Başarılar</SectionSubTitle>
             <AboutMeList>
-              <AboutMeListPoint>
-                <b>15-16-23 Eylül 2020 tarihlerinde düzenlenen,</b>
-                <br></br>
-                <br></br>
-                DiL VE KONUSMA TERAPISi ALANINDA NÖROLOJiK REHABILITASYON.
-                (Aybuke YILDIRIM Dil ve KonusmaTerapisti)
-              </AboutMeListPoint>
-              <AboutMeListPoint></AboutMeListPoint>
+              {ceritificateData.events.map((data, index) => (
+                <AboutMeListPoint key={index}>
+                  <b>{data.date} tarihlerinde düzenlenen,</b>
+                  <AboutMeParagraph>
+                    {data.title}
+                    <br></br>
+                    {data.presenter}
+                  </AboutMeParagraph>
+                </AboutMeListPoint>
+              ))}
             </AboutMeList>
           </PageSection>
         </SectionContent>

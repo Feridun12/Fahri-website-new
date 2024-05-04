@@ -7,7 +7,7 @@ export const SectionWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const SectionContentWrapper = styled.div`
@@ -21,12 +21,21 @@ export const SectionContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
+`;
+
+export const SectionContentPart = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;
 
 export const SectionTitleWrapper = styled.div`
@@ -39,7 +48,7 @@ export const SectionTitleWrapper = styled.div`
 `;
 
 export const SectionTitle = styled.h1`
-  height: 55px;
+  height: 80px;
   width: 240px;
   font-size: 30px;
   font-weight: 500;
@@ -61,7 +70,6 @@ export const SectionSubTitle = styled.h3`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
 `;
 
 export const SectionParagraph = styled.p`
@@ -78,14 +86,15 @@ export const SectionParagraph = styled.p`
 `;
 
 // could be used for right and left section
-export const PageSection = styled.section`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
+// export const PageSection = styled.section`
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 10px;
+// `;
 
 export const Button = styled.button`
   width: 200px;

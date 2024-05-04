@@ -8,16 +8,17 @@ import {
   SectionTitleWrapper,
   SectionContentWrapper,
   SectionContent,
-  PageSection,
   SectionTitle,
   SectionSubTitle,
   SectionParagraph,
+  SectionContentPart,
 } from "../ui/appSections";
 import {
   AboutMeImg,
   AboutMeList,
   AboutMeListPoint,
   AboutMeParagraph,
+  AboutMeSecondSection,
 } from "../ui/aboutMeStyledComponents";
 
 function AboutMe() {
@@ -27,34 +28,38 @@ function AboutMe() {
         <SectionTitle>Hakkımızda</SectionTitle>
       </SectionTitleWrapper>
       <SectionContentWrapper>
-        <SectionSubTitle>Fahri Erbulak kimdir ?</SectionSubTitle>
         <SectionContent>
-          <SectionParagraph>
-            Dil ve Konuşma Terapisti Fahri Erbulak, 25.01.1999 Lefkoşa doğumlu.
-            Lisans eğitimini Yakın Doğu Üniversitesi Sağlık Bilimleri
-            Fakültesi’nde başladığı eğitimini 2021 yılında tamamlayarak Dil ve
-            Konuşma Terapisi unvanı almıştır.
-          </SectionParagraph>
-          <SectionParagraph>
-            Öğretim yılı süresince Akıcı Konuşma Bozuklukları, Dil ve Konuşma
-            Bozuklukları, Dil Bozuklukları alanlarını kapsayan uygulamaya
-            yönelik stajlarını, Fizyomed Özel Eğitim ve Rehabilitasyon Merkezi
-            (Manisa) ve Magusa Tıp Merkezinde tamamlamıştır.
-          </SectionParagraph>
-          <AboutMeImg
-            src={aboutMeImg1}
-            alt="will be decided with the upcoming images"
-          />
+          <SectionContentPart>
+            <SectionSubTitle>Fahri Erbulak kimdir ?</SectionSubTitle>
+            <SectionParagraph>
+              Dil ve Konuşma Terapisti Fahri Erbulak, 25.01.1999 Lefkoşa
+              doğumlu. Lisans eğitimini Yakın Doğu Üniversitesi Sağlık Bilimleri
+              Fakültesi’nde başladığı eğitimini 2021 yılında tamamlayarak Dil ve
+              Konuşma Terapisi unvanı almıştır.
+            </SectionParagraph>
+            <SectionParagraph>
+              Öğretim yılı süresince Akıcı Konuşma Bozuklukları, Dil ve Konuşma
+              Bozuklukları, Dil Bozuklukları alanlarını kapsayan uygulamaya
+              yönelik stajlarını, Fizyomed Özel Eğitim ve Rehabilitasyon Merkezi
+              (Manisa) ve Magusa Tıp Merkezinde tamamlamıştır.
+            </SectionParagraph>
+          </SectionContentPart>
+          <SectionContentPart>
+            <AboutMeImg
+              src={aboutMeImg1}
+              alt="will be decided with the upcoming images"
+            />
+          </SectionContentPart>
         </SectionContent>
-        <SectionContent>
-          <PageSection>
+        <AboutMeSecondSection>
+          <SectionContentPart>
             {" "}
             <AboutMeImg
               src={aboutMeImg1}
               alt="will be decided with the upcoming images"
             />
-          </PageSection>
-          <PageSection>
+          </SectionContentPart>
+          <SectionContentPart>
             <SectionSubTitle>Başarılar</SectionSubTitle>
             <AboutMeList>
               {ceritificateData.events.map((data, index) => (
@@ -68,8 +73,8 @@ function AboutMe() {
                 </AboutMeListPoint>
               ))}
             </AboutMeList>
-          </PageSection>
-        </SectionContent>
+          </SectionContentPart>
+        </AboutMeSecondSection>
       </SectionContentWrapper>
     </SectionWrapper>
   );

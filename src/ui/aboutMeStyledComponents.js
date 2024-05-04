@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { SectionParagraph } from "./appSections";
+import { SectionParagraph, SectionContent } from "./appSections";
 
 export const AboutMeImg = styled.img`
   width: 90%;
   border-radius: 12px;
   height: 250px;
-  margin-top: 20px;
 `;
 
 export const AboutMeList = styled.ul`
@@ -13,6 +12,12 @@ export const AboutMeList = styled.ul`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    max-height: 250px;
+    overflow: scroll;
+  }
 `;
 
 export const AboutMeListPoint = styled.li`
@@ -24,4 +29,19 @@ export const AboutMeListPoint = styled.li`
 
 export const AboutMeParagraph = styled(SectionParagraph)`
   width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+// created this component so we could show the content in a column reverse way.
+// it has been implemented because of the design choices I have made.
+export const AboutMeSecondSection = styled(SectionContent)`
+  flex-direction: column-reverse;
+  /* margin-top: 5%; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
